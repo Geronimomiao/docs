@@ -1,0 +1,97 @@
+# react 起步二
+
+
+
+**组件之间传递数据**
+
+```text
+class App extends React.Component{
+  render() {
+    const boss = '李云龙'
+    return (
+      <div>
+        <h2>独立团，团长{boss}</h2>
+        <OneCamp camper='张大喵'></OneCamp>
+      </div>
+    )
+  }
+}
+
+class OneCamp extends React.Component{
+  render() {
+    return <h2>一营营长，{this.props.camper}</h2>
+  }
+}
+```
+
+**组件内部 state**
+
+* 组件内部通过 state 管理状态
+  * JSX 本质就是 js 所以数组.map渲染列表
+  * Constructor 设置初始状态 记得执行 super\(props\)
+  * State 为不可变对象 this.state 获取
+
+```text
+class OneCamp extends React.Component{
+  constructor(props) {
+    super(props)
+    this.state = {
+      solders: ['虎子', '柱子', '王根生']
+    }
+  }
+  render() {
+    return (
+      <div>
+        <h2>一营营长，{this.props.camper}</h2>
+        <ul>
+          {this.state.solders.map(v=>{
+            return <li key={v}> {v} </li>
+          })}
+        </ul>
+      </div>
+    )
+  }
+}
+```
+
+**事件**
+
+* onClick 点击事件
+  * JSX里 onClick={this.函数名} 来绑定事件
+  * this引用 问题 需要在构造函数用 bind 绑定 this
+    * 方案一 
+      *  this.addSolder\(\)}&gt;新兵入伍
+    * 方案二
+      * this.addSolder = this.addSolder.bind\(this\)
+  * this.setState 修改 state 记得返回新的 state 而不是直接修改
+
+```text
+class OneCamp extends React.Component{
+  constructor(props) {
+    super(props)
+    this.state = {
+      solders: ['虎子', '柱子', '王根生']
+    }
+    this.addSolder = this.addSolder.bind(this)
+  }
+  addSolder() {
+    this.setState({
+      solders: [...this.state.solders, '新兵'+Math.random()]
+    })
+  }
+  render() {
+    return (
+      <div>
+        <h2>一营营长，{this.props.camper}</h2>
+        <button onClick={this.addSolder}>新兵入伍</button>
+        <ul>
+          {this.state.solders.map(v=>{
+            return <li key={v}> {v} </li>
+          })}
+        </ul>
+      </div>
+    )
+  }
+}
+```
+
