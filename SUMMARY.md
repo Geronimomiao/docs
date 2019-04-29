@@ -9,6 +9,7 @@
 
 ## REACT补充
 
-* [redux](react-bu-chong/redux.md)
 * [react 生命周期](react-bu-chong/react-life-cycle.md)
+* [redux](react-bu-chong/redux.md)
+* [react-router](react-bu-chong/react-router.md)
 

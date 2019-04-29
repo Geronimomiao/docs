@@ -1,7 +1,5 @@
 # React
 
-
-
 **简介**
 
 * Facebook 出品 专注于 View 层
