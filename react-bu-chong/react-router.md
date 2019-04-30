@@ -43,10 +43,6 @@ const App = () => (
 
 render(<App />, document.getElementById('root'))
 
-作者：undead25
-链接：https://juejin.im/post/5995a2506fb9a0249975a1a4
-来源：掘金
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 ```
 
 * 其他组件
