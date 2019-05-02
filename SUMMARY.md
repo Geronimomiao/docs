@@ -17,4 +17,5 @@
 ## REACT知识点详解
 
 * [JSX](react-zhi-shi-dian-xiang-jie/jsx.md)
+* [Component](react-zhi-shi-dian-xiang-jie/component.md)
 

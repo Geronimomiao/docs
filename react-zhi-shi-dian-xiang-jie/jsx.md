@@ -1,10 +1,8 @@
 # JSX
 
-
-
 **JSX 简介**
 
-JSX 是用来描述UI的 JS 扩展语法 长期以来 UI 和 数据分离 一直是前端一个重要关注点 React 致力于通过组件概念将页面拆分 并实现组件复用 React 认为 一个组件应该是 具备UI描述 和UI数据的完整体，不应该分开处理，于是发明 JXS 作为UI描述和UI数据之间的桥梁
+JSX 是用来描述UI的 JS 扩展语法 长期以来 UI 和 数据分离 一直是前端一个重要关注点 React 致力于通过组件概念将页面拆分 并实现组件复用 React 认为 一个组件应该是 具备UI描述 和UI数据的完整体，不应该分开处理，于是发明 JSX 作为UI描述和UI数据之间的桥梁
 
 **标签类型**
 
@@ -33,8 +31,8 @@ const element = (
 * Dom 标签
   * class 写成 className 
   * onclick 写成 onClick
-* JSX 标签是React组件时 可以自定义标签或属性名
-  * 
+* JSX 标签是React组件时 可以自定义标签或属性名 
+  * &lt;User name='React' age='4' address='America'&gt;
 
 **注释**
 
