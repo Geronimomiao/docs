@@ -17,6 +17,7 @@
 ## REACT知识点详解
 
 * [JSX](react-zhi-shi-dian-xiang-jie/jsx.md)
-* [Component](react-zhi-shi-dian-xiang-jie/component.md)
 * [Virtual DOM](react-zhi-shi-dian-xiang-jie/virtual-dom.md)
+* [Component 进阶一](react-zhi-shi-dian-xiang-jie/component.md)
+* [Component 进阶二](react-zhi-shi-dian-xiang-jie/component-jin-jie-er.md)
 
