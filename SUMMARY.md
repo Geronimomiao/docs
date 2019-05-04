@@ -18,4 +18,5 @@
 
 * [JSX](react-zhi-shi-dian-xiang-jie/jsx.md)
 * [Component](react-zhi-shi-dian-xiang-jie/component.md)
+* [Virtual DOM](react-zhi-shi-dian-xiang-jie/virtual-dom.md)
 

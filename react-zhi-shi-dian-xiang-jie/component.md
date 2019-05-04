@@ -100,6 +100,30 @@ Welcome.defaultProps = {
 * React 组件是一个 class 或函数 接收一些属性作为输入 返回一个 React 元素
 * React 组件是由若干个 React 元素组建而成
 
+
+
+**列表和keys**
+
+* 在进行列表渲染 应为列表中每一个元素 添加一个名为key的属性\(推荐用列表元素的ID作为key值\)
+* React通过key属性来标记列表中的每一个元素 当列表数据发生变化 React就可以通过key知道那些元素发生了变化 从而只渲染发生变化的元素 提高渲染效率
+
+\*\*\*\*
+
+**受控组件**
+
+* 表单元素的值由react管理
+* 注意通过 onChange 对用户输入数据 进行绑定 及 渲染
+
+**非受控组件**
+
+input 等元素会根据用户的输入自动改变显示内容 而不是从组件的状态中获取显示的内容 使用受控组件虽然保证表单元素状态 由onChange事件统一处理 同步至React state React 中提供了ref 来引用React组件 或DOM实例
+
+```text
+<input defaultValue='something' type="text" ref={input => this.input = input} />
+```
+
+ref 的值是一个函数 这个函数会接收当前元素做为参数 例子中 input 指向当前元素 我们将其赋给 this.input 进而可以在组件其他地方 通过this.input 获取该元素
+
 **补充**
 
 **使用ReactDOM.render\(\) 需要先导入react-dom库 这个库会完成组件所代表的虚拟DOM节点到浏览器DOM节点的转换**
