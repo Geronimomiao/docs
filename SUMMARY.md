@@ -12,7 +12,6 @@
 
 * [react 生命周期](react-bu-chong/react-life-cycle.md)
 * [redux](react-bu-chong/redux.md)
-* [react-router](react-bu-chong/react-router.md)
 
 ## REACT知识点详解
 
@@ -20,4 +19,9 @@
 * [Virtual DOM](react-zhi-shi-dian-xiang-jie/virtual-dom.md)
 * [Component 进阶一](react-zhi-shi-dian-xiang-jie/component.md)
 * [Component 进阶二](react-zhi-shi-dian-xiang-jie/component-jin-jie-er.md)
+
+## react-router
+
+* [react-router](react-router/react-router.md)
+* [HashRouter vs BrowserRouter](react-router/hashrouter-vs-browserrouter.md)
 
