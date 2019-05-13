@@ -35,3 +35,10 @@
     * hash
     * state 
 
+
+
+**除了使用 Link  还可以通过 history 对象实现手动导航**
+
+* history.push\(path, \[state\]\)
+* history.replace\(path, \[state\]\)
+
