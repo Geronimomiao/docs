@@ -11,6 +11,7 @@
 ## REACT补充
 
 * [react 生命周期](react-bu-chong/react-life-cycle.md)
+* [match location history](react-bu-chong/match-location-history.md)
 * [redux](react-bu-chong/redux.md)
 
 ## REACT知识点详解
@@ -23,7 +24,6 @@
 ## react-router
 
 * [react-router 基础](react-router/reactrouter-ji-chu.md)
-* [match location history](react-router/match-location-history.md)
 * [react-router 应用](react-router/react-router.md)
 * [HashRouter vs BrowserRouter](react-router/hashrouter-vs-browserrouter.md)
 

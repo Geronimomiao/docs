@@ -57,6 +57,8 @@ class Dashboard extends React.Component {
 
 * 保存当前路由 pathname 信息
   * 登录后跳转之登录前的页面 
+* state 可以用来储存上一个路由某些状态
+  * 在跳转后调用
 
 **history**
 
